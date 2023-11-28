@@ -1,0 +1,45 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node.js & TypeScript",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {}
+	},
+
+	// TODO: Is it possible to work around https://github.com/zowe/zowe-cli/issues/1786 ?
+	//
+	// IPC_LOCK is required to run gnome-keyring-daemon. See:
+	// https://stackoverflow.com/questions/75672304/why-does-gnome-keyring-daemon-fail-with-operation-not-permitted-in-a-dev-conta
+	// "capAdd": [
+	// 	"IPC_LOCK"
+	// ],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "./.devcontainer/post-create.sh",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"zowe.security.secureCredentialsEnabled": false
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"Zowe.vscode-extension-for-zowe",
+				"IBM.zopeneditor"
+			]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
