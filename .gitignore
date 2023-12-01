@@ -1,2 +1,4 @@
 /zowe.config.json
 /zowe.schema.json
+
+*.log

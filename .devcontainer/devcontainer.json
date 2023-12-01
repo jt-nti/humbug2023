@@ -7,7 +7,8 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/java:1": {}
+		"ghcr.io/devcontainers/features/java:1": {},
+		"ghcr.io/devcontainers/features/python:1": {}
 	},
 
 	// TODO: Is it possible to work around https://github.com/zowe/zowe-cli/issues/1786 ?
