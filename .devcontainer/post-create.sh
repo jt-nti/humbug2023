@@ -5,6 +5,8 @@
 # sudo apt-get -y install libsecret-1-0 dbus
 # apt-get -y install libsecret-1-0 gnome-keyring libpam-gnome-keyring dbus-x11
 
+pip3 install ebcdic tnz
+
 npm install -g prebuild-install
 npm install -g @zowe/cli@zowe-v2-lts
 
