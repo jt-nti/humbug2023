@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "AOC terminal",
+            "type": "shell",
+            "command": "zti ibmaoczos.mainframe.community:992",
+            "problemMatcher": []
+        }
+    ]
+}
