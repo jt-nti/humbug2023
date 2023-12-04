@@ -8,4 +8,5 @@ Mainframe Advent of Code 2023
 
 - [Advent of Code 2023](https://adventofcode.com/2023)
 - [Advent of Code for Mainframers 2023](https://www.reddit.com/r/mainframe/comments/181h8iq/announcing_advent_of_code_for_mainframers_2023/)
+- [COBOL is fun!](https://github.com/IBM/cobol-is-fun)
 - [COBOL Programming Course](https://github.com/openmainframeproject/cobol-programming-course)
